@@ -57,6 +57,9 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FaUserNinja, FaGoogle, FaApple } from "react-icons/fa";
 import { IoKeySharp } from "react-icons/io5";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
   const [userName, setUserName] = useState('');
@@ -67,24 +70,41 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
-
+  
     try {
       const response = await fetch("http://localhost:4000/api/v1/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userName, password }),
       });
+  
 
+      const data = await response.json();
       if (response.ok) {
-        navigate('/GroupChats'); // Redirect on successful login
+        localStorage.setItem("token", data.token); // Store the token
+        toast.success('🎉 Logged In successfully!', {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+
+        // Delay navigation to allow the toast to be seen
+        setTimeout(() => navigate('/GroupChats'), 2000);
       } else {
-        const data = await response.json();
+        // const data = await response.json();
         setError(data.message || "Login failed");
       }
     } catch (err) {
       setError("An error occurred. Please try again.");
     }
   };
+  
 
   return (
     <div className='formBg'>
@@ -136,6 +156,19 @@ const Login = () => {
           </span>
         </p>
       </form>
+      <ToastContainer 
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </div>
   );
 };

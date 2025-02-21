@@ -9,8 +9,10 @@
     display: flex;
 }
 .groups{
-    background-color: rgba(0, 0, 0, 0.543);
-    width: 30%;
+    /* background-color: rgba(0, 0, 0, 0.543); */
+    background-color: black;
+    border-right: 1px solid white;
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -36,6 +38,51 @@
    background-size: cover;
    background-color: rgba(0, 0, 0, 0.429);
    background-blend-mode: darken;
-    width: 70%;
+    width: 80%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Exo 2", serif;
+    
+}
+
+.sendChat{
+    width: 100%;
+    height: 70px;
+    /* background-color: black; */
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sendChat input{
+    width: 70%;
+    height: 80%;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sendChat input::placeholder{
+    color: white;
+}
+.sendChat i{
+    margin-top: 10px;
+    color:  #6B30FF;
+    font-size: 40px;
+}
+
+.chatMessages{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.message{
+    color: white;
 }

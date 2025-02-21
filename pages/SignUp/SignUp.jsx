@@ -50,6 +50,8 @@ import { useNavigate } from 'react-router-dom';
 import './SignUp.css';
 import { FaUserNinja } from "react-icons/fa";
 import { IoKeySharp } from "react-icons/io5";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
   const [userName, setUserName] = useState('');
@@ -59,24 +61,44 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    setError('');
+  
     try {
       const response = await fetch("http://localhost:4000/api/v1/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userName, password }),
       });
-
+  
+      const data = await response.json();
+  
       if (response.ok) {
-        navigate('/GroupChats'); // Redirect on success
+        localStorage.setItem("token", data.token); // Store the token
+
+        // Show success toast
+        toast.success('🎉 Sign up successful!', {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+
+        // Delay navigation to allow the toast to be seen
+        setTimeout(() => navigate('/GroupChats'), 2000);
       } else {
-        const data = await response.json();
-        setError(data.message || "Signup failed");
+        setError(data.message || "Sign Up failed");
       }
     } catch (err) {
       setError("An error occurred. Please try again.");
     }
   };
+  
+  
 
   return (
     <div className='formBg'>
@@ -124,6 +146,20 @@ const SignUp = () => {
           </span>
         </p>
       </form>
+
+      <ToastContainer 
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </div>
   );
 };
