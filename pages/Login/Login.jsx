@@ -81,7 +81,9 @@ const Login = () => {
 
       const data = await response.json();
       if (response.ok) {
-        localStorage.setItem("token", data.token); // Store the token
+        localStorage.setItem("token", data.token); 
+        localStorage.setItem("userName", data.user.userName);
+        // console.log("User saved in localStorage:", data.user.userName);
         toast.success('🎉 Logged In successfully!', {
           position: "top-right",
           autoClose: 2000,
