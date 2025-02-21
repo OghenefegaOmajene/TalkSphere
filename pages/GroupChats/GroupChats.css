@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'AngryBirds Regular';
+    src: url('../../fonts/angrybirds-regular.ttf') format('truetype');
+}
+.groupsBox{
+    width: 92%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+}
+.groups{
+    background-color: rgba(0, 0, 0, 0.543);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.groupsHead{
+    /* background-color: crimson; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "AngryBirds Regular", sans-serif;
+}
+.groupsHead i, h1{
+    font-size: 30px;
+    color: white;
+}
+.groupChatSpace{
+   background-image: url('https://i.pinimg.com/736x/2d/c9/0e/2dc90e7d4af9296805d31916841f677d.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 0.429);
+   background-blend-mode: darken;
+    width: 70%;
+    height: 100%;
+}

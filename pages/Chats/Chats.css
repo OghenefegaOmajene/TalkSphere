@@ -1,0 +1,16 @@
+.chats{
+    width: 92%;
+    height: 100%;
+    background-color: crimson;
+    display: flex;
+}
+.chatUsers{
+    background-color: rgb(68, 64, 75);
+    width: 30%;
+    height: 1005;
+}
+.chatSpace{
+    background-color: plum;
+    width: 70%;
+    height: 100%;
+}

@@ -21,11 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-family: "AngryBirds Regular", sans-serif;
     /* border: 2px solid black; */
 }
-
+.logo a{
+    color: white;
+    text-decoration: none;
+}
 .sideNavLinks{
     width: 100%;
     height: 400px;

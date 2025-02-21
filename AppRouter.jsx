@@ -4,6 +4,7 @@ import Body from "./pages/Body/Body";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
 import Chats from "./pages/Chats/Chats";
+import GroupChats from "./pages/GroupChats/GroupChats";
 import SideNav from "./components/SideNav/SideNav";
 
 const Layout = () => {
@@ -20,7 +21,7 @@ const Layout = () => {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Chats" element={<Chats />} />
-        
+        <Route path="/GroupChats" element={<GroupChats />} />
 
         
         {/* <Route path="*" element={<Navigate to="/HomePage" />} /> */}
