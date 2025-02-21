@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from '../components/Navbar/Navbar'
+import AppRouter from '../AppRouter'
 
 function App() {
  
   return (
     <>
       <div className="App">
-        <Navbar></Navbar>
+        <AppRouter/>
       </div>
     </>
   )

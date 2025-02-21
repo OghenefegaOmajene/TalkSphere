@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'AngryBirds Regular';
+    src: url('../../fonts/angrybirds-regular.ttf') format('truetype');
+}
+.sideNav{
+    /* border: 1px solid black; */
+    /* background-color: #BA2A71 ; */
+    background-color: #6B30FF;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 100%;
+    height: 80px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "AngryBirds Regular", sans-serif;
+    /* border: 2px solid black; */
+}
+
+.sideNavLinks{
+    width: 100%;
+    height: 400px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sideNavLinks i{
+    font-size: 25px;    
+    color: white;
+}
+
+.sideNavBtn{
+    width: 100%;
+    /* background-color: crimson; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sideNavBtn i{
+    font-size: 20px;    
+    color: white;
+}
+
+.profilePic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
