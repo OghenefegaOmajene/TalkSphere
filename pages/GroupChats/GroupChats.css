@@ -11,7 +11,7 @@
 .groups{
     /* background-color: rgba(0, 0, 0, 0.543); */
     background-color: black;
-    border-right: 1px solid white;
+    border-right: 1px solid #0cc02d;
     width: 20%;
     height: 100%;
     display: flex;
@@ -33,7 +33,8 @@
     color: white;
 }
 .groupChatSpace{
-   background-image: url('https://i.pinimg.com/736x/2d/c9/0e/2dc90e7d4af9296805d31916841f677d.jpg');
+   /* background-image: url('https://i.pinimg.com/736x/2d/c9/0e/2dc90e7d4af9296805d31916841f677d.jpg'); */
+   background-image: url('https://i.pinimg.com/736x/a2/26/15/a22615bf6a462d377dc142dfff3d62ea.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -74,7 +75,7 @@
 }
 .sendChat i{
     margin-top: 10px;
-    color:  #6B30FF;
+    color:  #0cc02d;
     font-size: 40px;
 }
 
@@ -132,7 +133,7 @@
   }
   
   .received {
-    background-color: rgba(49, 0, 82, 0.731);
+    background-color: rgba(0, 82, 3, 0.523);
     color: white;
     align-self: flex-start;
   }
@@ -167,7 +168,7 @@
     height: 40px;
     border: none;
     outline: none;
-    caret-color: #6B30FF;
+    caret-color: #02440e;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     padding-left: 15px;

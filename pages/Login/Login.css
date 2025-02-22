@@ -62,7 +62,7 @@
   }
   
   .inputForm:focus-within {
-    border: 1.5px solid  #6B30FF;
+    border: 1.5px solid  #0cc02d;
   }
   
   .forgotPass {
@@ -116,12 +116,12 @@
   }
   
 .signUpSpan a{
-    color:  #6B30FF;
+    color:  #0cc02d;
     text-decoration: none;
 }
 
 .span{
-    color:  #6B30FF;
+    color:  #0cc02d;
 }
 
 @media screen and (max-width: 1200px) {

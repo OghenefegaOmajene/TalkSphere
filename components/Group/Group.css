@@ -2,10 +2,10 @@
     width: 100%;
     height: 100px;
     /* border-top: 1px solid white; */
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #0cc02d;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     /* padding-left: 10px; */
     font-family: "Exo 2", serif;
@@ -14,13 +14,14 @@
     width: 70px;
     height: 70%;
     border-radius: 50px;
-    background-color: white;
+    /* background-color: white; */
+    /* border: 2px solid #0cc02d; */
 }
 
 .groupName{
     /* background-color: wheat; */
     height: 100%;
-    width: 75%;
+    width:60%;
     display: flex;
     flex-direction: column;
     justify-content: center;

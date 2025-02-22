@@ -18,3 +18,10 @@
   /* border: 2px solid black; */
   /* justify-content: space-between; */
 }
+
+@media screen and (max-width: 1200px) {
+  .App{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

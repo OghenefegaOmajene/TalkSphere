@@ -11,7 +11,7 @@
 }
 
 .imgBox{
-    width: 50%;
+    width: 80%;
     height: 360px;
     /* border: 1px solid black; */
     display: flex;
@@ -25,9 +25,10 @@
 }
 
 .signIn{
-    background-color: #6B30FF;
+    /* background-color: #0cc02d; */
+    background-color: #02440e;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
     color: white;
 }

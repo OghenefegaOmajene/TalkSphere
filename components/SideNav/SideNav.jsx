@@ -1,11 +1,11 @@
 import React from 'react'
 import './SideNav.css'
 // import favicon from '../../images/favicon.png'
-import avatar from '../../images/avatar.jpg'
+import anya from '../../images/anya.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import { IoMdSettings } from "react-icons/io";
 import { MdOutlineGroups2 } from "react-icons/md";
-// import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { RiRobot3Line } from "react-icons/ri";
 
 const SideNav = () => {
@@ -31,9 +31,9 @@ const SideNav = () => {
 
         <div className="sideNavLinks">
 
-          {/* <Link to='/Chats'>
+          <Link to=''>
             <i><IoChatboxEllipsesOutline /></i>
-          </Link> */}
+          </Link>
           
           <Link to={isLoggedIn ? "/GroupChats" : "/SignUp"} onClick={handleGroupChatClick}>
             <i><MdOutlineGroups2 /></i>
@@ -45,7 +45,7 @@ const SideNav = () => {
 
         <div className="sideNavBtn">
             <i><IoMdSettings /></i>
-            <img src={avatar} alt="" className='profilePic'/>
+            <img src={anya} alt="" className='profilePic'/>
         </div>
     </div>
   )

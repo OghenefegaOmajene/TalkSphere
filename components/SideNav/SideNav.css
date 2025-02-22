@@ -5,7 +5,7 @@
 .sideNav{
     /* border: 1px solid black; */
     /* background-color: #BA2A71 ; */
-    background-color: #6B30FF;
+    background-color: #02440e;
     height: 100%;
     width: 10%;
     display: flex;
@@ -35,18 +35,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
+    gap: 40px;
 }
 
 .sideNavLinks i{
-    font-size: 25px;    
+    font-size: 26px;    
     color: white;
 }
 
 .sideNavBtn{
     width: 100%;
     /* background-color: crimson; */
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,4 +64,24 @@
     height: 40px;
     border-radius: 50px;
     border: 2px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+    .sideNav{
+        width: 100%;
+        height: 30%;
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .sideNavLinks{
+        display: flex;
+        height: 100%;
+        width: 20%;
+        border: 1px solid white;
+    }
+    .sideNavBtn{
+        display: flex;
+    }
 }
