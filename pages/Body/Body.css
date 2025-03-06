@@ -19,8 +19,8 @@
     justify-content: center;
 }
 .phone1{
-    width: 65%;
-    height: 100%;
+    width: 40%;
+    height: 90%;
     margin-left: -50px;
 }
 
@@ -45,4 +45,58 @@
 
 .welcomeTxt{
     color: black;
+}
+
+/* @media screen and (max-height: 920px) {
+    .body{
+        height: 150vh;
+    }
+} */
+@media screen and (max-width: 1200px) {
+    .imgBox{
+        width: 60%;
+        height: 500px;
+    }
+    .imgBox img{
+        width: 100%;
+        height: 100%;
+    }
+    .body{
+        gap: 40px
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .imgBox{
+        width: 80%;
+        height: 500px;
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    .imgBox{
+        width: 70%;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 664px) {
+    .imgBox{
+        width: 80%;
+        height: 400px;
+    }
+    .welcomeTxt{
+        text-align: center;
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imgBox{
+        width: 100%;
+        height: 400px;
+    }
 }
