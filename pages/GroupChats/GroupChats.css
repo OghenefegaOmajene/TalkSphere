@@ -185,3 +185,20 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .groupsBox{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 980px) {
+  .groupChatSpace{
+    display: none;
+  }
+  .groups{
+    width: 100%;
+  }
+  
+}
