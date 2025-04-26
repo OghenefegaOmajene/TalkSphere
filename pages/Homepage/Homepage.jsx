@@ -1,5 +1,5 @@
 import React from 'react'
-import talksphere from '../../images/talksphere.png'
+import talksphere from '../../images/talksphere2.png'
 import './Homepage.css'
 
 const Homepage = () => {
