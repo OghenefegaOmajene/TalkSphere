@@ -1,7 +1,7 @@
 import React from 'react'
 import './SideNav.css'
 // import favicon from '../../images/favicon.png'
-import logo from '../../images/talksphere.png'
+import logo from '../../images/talksphere2.png'
 import anya from '../../images/anya.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import { IoMdSettings } from "react-icons/io";
