@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import Homepage from "./pages/Homepage/Homepage";
 import Body from "./pages/Body/Body";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
@@ -14,10 +15,12 @@ const AppRouter = () => {
     <>
       
       <Router>
-        <SideNav/>
+        {/* <SideNav/> */}
         <Routes>
           {/* Redirect root to HomePage */}
-          <Route path="/" element={<Navigate to="/Body" />} />
+          <Route path="/" element={<Navigate to="/Homepage" />} />
+          <Route path="/Homepage" element={<Homepage />} />
+          {/* <Route path="/" element={<Navigate to="/Body" />} /> */}
           <Route path="/Body" element={<Body />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
